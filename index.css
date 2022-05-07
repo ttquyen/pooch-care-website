@@ -21,6 +21,9 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
+.main-title {
+  color: #ddd;
+}
 .header {
   background-color: #151515;
   position: fixed;
@@ -172,14 +175,13 @@ ul {
   text-align: center;
 }
 .about .container .subtitle {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  text-transform: uppercase;
   line-height: 2em;
   letter-spacing: 1px;
   color: #f53626;
 }
-.about .container .hny-title {
+.about .container .main-title {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -254,23 +256,19 @@ a {
 .feature .row .area-box p {
   font-size: 19px;
 }
-.services .img-curve {
-  /* padding-left: 36px !important; */
-  /* border-top-left-radius: 10px; */
-}
+
 .services img {
   max-width: 100%;
   height: auto;
 }
 .services .sub-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  text-transform: uppercase;
   line-height: 2em;
   letter-spacing: 1px;
   color: #f53626;
 }
-.services .hny-title {
+.services .main-title {
   font-size: 35px !important;
   line-height: 40px;
 }
@@ -287,7 +285,7 @@ a {
   margin: 15px 0;
   font-weight: 600;
 }
-.services .cont-4 li span.fa {
+.services ul li span.fa {
   color: #189a46;
   margin-right: 12px;
   background: #222;
@@ -330,30 +328,30 @@ a {
 .pricing .sub-title {
   text-align: center;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: 600;
   color: #f53626;
 }
-.pricing .hny-title {
+.pricing.main-title {
   font-size: 35px !important;
   line-height: 40px;
 }
-.w3l-pricing-7-main .pricing-sec-7 {
+.pricing .pricing-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 5% auto;
   margin-top: 0;
   width: 90%;
 }
-.w3l-pricing-7-top {
+.pricing .pricing-item .top {
   text-align: center;
 }
-.w3l-pricing-7-main .pric-7-1 .w3l-pricing-7 {
+.pricing .pricing-item-left .box {
   padding: 3.5em 2.5em;
   border-right: 0;
 }
-.w3l-pricing-7-main h6 {
+.pricing h6 {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 10px;
@@ -361,20 +359,28 @@ a {
   line-height: 30px;
   font-weight: 600;
 }
-.w3l-pricing-7-main h4 {
+.pricing h4 {
   font-size: 40px;
   line-height: 45px;
   margin: 15px 0 20px;
   text-align: center;
   font-weight: 600;
-  color: var(--primary-color);
+  color: #116e32;
 }
-.w3l-pricing-7-bottom {
+.pricing-item .bottom {
   text-align: center;
   padding-top: 1em;
 }
-.w3l-pricing-7-main .buy-button {
+.pricing .buy-button {
   margin-top: 2em;
+}
+.pricing .buy-button .btn-style {
+  background-color: #189a46;
+  border-color: #189a46;
+}
+.pricing .buy-button:hover .btn-style {
+  background-color: #116e32;
+  border-color: #116e32;
 }
 .btn-style {
   padding: 12px 35px;
@@ -385,18 +391,17 @@ a {
   transition: 0.3s ease-in;
   border-radius: 10px;
 }
-.pricing-gd-left.pric-7.active .w3l-pricing-7-top {
+.pricing-item-active .top {
   padding: 3em 2.5em 0.5em 2.5em;
   background: #189a46;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-.w3l-pricing-7-main h5 {
+.pricing h5 {
   font-size: 15px;
   line-height: 20px;
   color: #189a46;
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 30px;
   font-weight: 700;
   display: inline-block;
@@ -404,53 +409,57 @@ a {
   background: #fff;
   border-radius: 10px;
 }
-.w3l-pricing-7-main h4 {
+.pricing h4 {
   font-size: 40px;
   line-height: 45px;
   margin: 15px 0 20px;
   text-align: center;
   font-weight: 600;
-  color: var(--primary-color);
+  color: #189a46;
 }
-.w3l-pricing-7-main h6,
-.w3l-pricing-7-main h4 {
+.pricing h6,
+.pricing h4 {
   color: #fff;
 }
-.w3l-pricing-7-main h4 span {
+.pricing h4 span {
   font-size: 16px;
   line-height: 25px;
   color: #fff;
   font-weight: 400;
 }
-.pricing-gd-left.pric-7.active .w3l-pricing-7-bottom {
+.pricing-item-active .bottom {
   padding: 2em 2.5em 3.5em;
 }
-.w3l-pricing-7-main .pric-7-2 .w3l-pricing-7 {
+.pricing .pricing-item-right .box {
   padding: 3.5em 2.5em;
   border-left: 0;
 }
-.pricing .pricing-gd-left {
+.pricing .pricing-item {
   background-color: #151515;
 }
 .pricing ul li p {
   font-size: 18px;
   line-height: 28px;
 }
-.w3l-index5 .play-view {
+.clip .play-view {
   left: 0;
   right: 0;
   top: calc(50% - 40px);
 }
-.w3l-index5 span.video-play-icon {
+.clip .sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #f53626;
+}
+.clip span.video-play-icon {
   background: #fff;
   display: inline-block;
   width: 55px;
   height: 55px;
   line-height: 55px;
   border-radius: 50%;
-  transition: 0.3s ease-in-out;
-  -webkit-animation: ripple 1s linear infinite;
-  animation: ripple 1s linear infinite;
 }
 .fa-play:before {
   content: "\f04b";
@@ -467,4 +476,167 @@ div#small-dialog iframe {
 }
 .mfp-hide {
   display: none !important;
+}
+.client {
+  background-color: #222222;
+}
+.client .sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #f53626;
+}
+.client .main-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.client .row {
+  max-width: 1050px;
+  margin: auto;
+}
+.client .owl-carousel .outer {
+  position: relative;
+  overflow: hidden;
+}
+.client .owl-carousel .owl-stage {
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 1s ease 0s;
+  width: 100%;
+  height: 300px !important;
+
+  position: relative;
+}
+.client .owl-carousel .owl-stage .owl-item {
+  width: 690px;
+  margin-right: 20px;
+  height: 100%;
+}
+
+.testimonial {
+  display: block;
+  margin: 0;
+  padding: 40px 30px;
+  position: relative;
+  background: #151515;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+}
+.client .testimonial blockquote {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+.client .testi-des {
+  display: flex;
+  text-align: center;
+  height: 100%;
+}
+.client .testimonial img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.client .testimonial h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ddd;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+  background: #189a46;
+  width: 30px;
+  height: 10px;
+}
+.update .container {
+  width: 80%;
+}
+.update .main-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+.update .text-center {
+  text-align: center !important;
+}
+
+.update .subscribe-field {
+  justify-content: space-between;
+}
+.update form input[type="email"] {
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 0px 20px;
+  height: 60px;
+  flex-basis: 70%;
+  background: #fff;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.update .btn {
+  background-color: #189a46;
+  border-color: #189a46;
+}
+.update .btn:hover {
+  color: #fff;
+  background-color: #116e32;
+  border-color: #116e32;
+}
+.footer {
+  background-color: #111;
+}
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.footer .mt-5,
+.my-5 {
+  margin-top: 3rem !important;
+}
+.footer h6 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+.footer ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.footer ul li p,
+.footer ul li a {
+  font-weight: normal;
+  font-size: 16px;
+  color: #afafaf;
+  line-height: 28px;
+}
+.footer .mt-3,
+.my-3 {
+  margin-top: 1rem !important;
+}
+.footer ul.social-icons {
+  margin-top: 3px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.footer ul.social-icons li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 0;
 }
