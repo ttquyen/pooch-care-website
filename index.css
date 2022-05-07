@@ -87,16 +87,16 @@ ul {
 }
 
 .carousel .carousel-item-1 {
-  background-image: url("./img/banner1.jpg");
+  background-image: url("./img/banner1.jpg") no-repeat center;
 }
 .carousel .carousel-item-2 {
-  background-image: url(./img/banner2.jpg);
+  background-image: url(./img/banner2.jpg) no-repeat center;
 }
 .carousel .carousel-item-3 {
-  background-image: url(./img/banner3.jpg);
+  background-image: url(./img/banner3.jpg) no-repeat center;
 }
 .carousel .carousel-item-4 {
-  background-image: url(./img/banner4.jpg);
+  background-image: url(./img/banner4.jpg) no-repeat center;
 }
 .carousel .carousel-caption {
   bottom: 50%;
@@ -561,7 +561,6 @@ div#small-dialog iframe {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
-  text-transform: capitalize;
 }
 .update .text-center {
   text-align: center !important;
@@ -639,4 +638,8 @@ div#small-dialog iframe {
   display: inline-block;
   margin-right: 15px;
   margin-bottom: 0;
+}
+.footer .footer-container {
+  border-top: 1px solid rgba(103, 99, 99, 0.14);
+  padding-top: 24px;
 }
