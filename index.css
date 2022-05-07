@@ -87,16 +87,16 @@ ul {
 }
 
 .carousel .carousel-item-1 {
-  background-image: url("./img/banner1.jpg") no-repeat center;
+  background-image: url("./img/banner1.jpg");
 }
 .carousel .carousel-item-2 {
-  background-image: url(./img/banner2.jpg) no-repeat center;
+  background-image: url(./img/banner2.jpg);
 }
 .carousel .carousel-item-3 {
-  background-image: url(./img/banner3.jpg) no-repeat center;
+  background-image: url(./img/banner3.jpg);
 }
 .carousel .carousel-item-4 {
-  background-image: url(./img/banner4.jpg) no-repeat center;
+  background-image: url(./img/banner4.jpg);
 }
 .carousel .carousel-caption {
   bottom: 50%;
