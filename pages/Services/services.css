@@ -158,6 +158,10 @@ a.read {
   margin-top: 20px;
   display: inline-block;
 }
+a.read:hover {
+  text-decoration: none;
+  color: #189a46;
+}
 
 .footer {
   background-color: #111;
